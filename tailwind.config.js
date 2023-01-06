@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily:{
-      "sans": ["OCR\\ A\\ Std", "Arial", "sans-serif"]
+      "sans": ["DataControl", "Arial", "sans-serif"]
     }
   },
   plugins: [],

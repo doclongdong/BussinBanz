@@ -9,7 +9,9 @@
 <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne+Mono"> -->
 <link href="/tailwind-generated.css" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/ocr-a-std" rel="stylesheet">
+<!-- <link href="https://fonts.cdnfonts.com/css/ocr-a-std" rel="stylesheet"> -->
+<link href="/hackerfont/stylesheet.css" rel="stylesheet">
+
 
 </head>
 
@@ -52,7 +54,9 @@
                   </p>
 
               <?php
-              echo "You entered " . $_POST["uname"] . " and " . $_POST["psw"]
+              if (array_key_exists("uname", $_POST) and array_key_exists("psw", $_POST)){
+                echo "You entered " . $_POST["uname"] . " and " . $_POST["psw"];
+              }
               ?>
               </form>
           </div>
